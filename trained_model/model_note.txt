@@ -1,0 +1,1 @@
+top_lr0.1_newtrain1.model', 'ann_512prof512dm_6000.pkl1' and '3chs_coatnet29_newtrain.model' are trained on the GPPS train dataset 'newtrain1.txt'.
