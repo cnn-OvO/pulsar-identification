@@ -9,13 +9,14 @@ The pulsar identifiacation program is a tool for scoring pulsar candidates from 
 ## <span id="index1">Install</span>
 
 0. The program may need the following environments to ensure that it runs smoothly: 
-		python = 3.8
 
-		torch = 1.10.0
+python = 3.8
 
-		torchvision = 0.11.1
+torch = 1.10.0
 
-		cv2 = 3.4.10
+torchvision = 0.11.1
+
+cv2 = 3.4.10
 
 1.  Clone the repository onto your local machine.
    
