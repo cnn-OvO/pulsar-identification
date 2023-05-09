@@ -1,29 +1,33 @@
-# pulsar-identification
+# Pulsar Identification Program
 
-__CONTENTS__
-- [ ] Install  (#1)
-- [ ] Usage  (#2)
+The pulsar identifiacation program is a tool for scoring pulsar candidates from radio astronomy surveys. It is designed to be user-friendly and customizable. The program handles input data in __.pfd__ file format, which is commonly used in radio astronomy surveys.
 
-<p id="1"> </p>
+## CONTENT
+- [Install](#index1)
+- [Usage](#index2)
 
-- [ ] __Install__
+## <span id="index1">Install</span>
 
-The following environments may be required for the program to run:
-python 3.8
-torch 1.10.0
-torchvision 0.11.1
-cv2 3.4.10
+0. The program may need the following environments to ensure that it runs smoothly: 
+		python = 3.8
+		torch = 1.10.0
+		torchvision = 0.11.1
+		cv2 = 3.4.10
 
-Download the codes and put under [PATH]
+1.  Clone the repository onto your local machine.
+   
+2.  Navigate to the root directory of the repository.
+   
+3.  Ensure that all `.py` file is executable by running `chmod +x xxx.py` in your terminal.
+   
+4. You can add the program to your bash environment:
+	export PYTHONPATH=/path/:$PYTHONPATH
+	alias pred='python3 /path/pred.py'
 
 
-<p id = "2"> </p>
+## <span id="index2">Usage</span>
 
-- [ ] __Usage__
-
-
-
-How to use the models trained by us to predict your candidates?
-The program reads '.pfd' file, so your candidate must record in pfd file. 
-If you are in a directory contains pfd file, you can run
-    python3.8 [PATH]/pred.py
+- __Prediction__
+The program score the pfd file in two ways:
+1. Navigate to a directory containing .pfd files, run `pred` if you add the program to your bash environment or run `python3 /path/pred.py`.
+2. Prepare a txt file list the names of .pfd file which you want to identify. Then run `pred -f xxx.txt` or run `python3 /path/pred.py xxx.txt`.
