@@ -30,9 +30,9 @@ The pulsar identifiacation program is a tool for scoring pulsar candidates from 
 
 - __Prediction__
 
-The program score the pfd file in two ways:
-1. Navigate to a directory containing .pfd files, run `pred` if you add the program to your bash environment or run `python3 /path/pred.py`.
-2. Prepare a txt file list the names of .pfd file which you want to identify. Then run `pred -f xxx.txt` or run `python3 /path/pred.py xxx.txt`.
+The program scores the pfd file in two ways:
+1. Navigate to a directory containing .pfd files, run `pred` if you add the program to your bash environment, or run `python3 /path/pred.py`.
+2. Prepare a txt file that lists all names of .pfd files to be identified. Then run `pred -f xxx.txt` or run `python3 /path/pred.py xxx.txt`.
 
 - __Train__
 
