@@ -10,6 +10,7 @@ from torch.utils.data import Dataset
 import os
 import torch
 from torchvision.transforms.functional import rotate
+import math
 
 class readpfd(pfd):
     def __init__(self):
@@ -300,7 +301,7 @@ def load_pred_data(pfd, num_works, data_type = "1Ddata"):
 
 def from_idx_read(pfds, num_works = 1, channel = 3):
     if len(pfds) < 5*num_works:
-        num_works = len(pfds) // 5
+        num_works = math.ceil(len(pfds) / 5)
     rp = readpfd()
     if channel == 2:
         with Pool(processes = num_works) as pool:
